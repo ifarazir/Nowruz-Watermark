@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>واترمارک ساز</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-    #imagee {
-        width: 100%;
-    }
+        #imagee {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -19,8 +19,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="input-group mb-3"
-                style="margin: 15px;font-family: Dana;    display: flex;
+            <div class="input-group mb-3" style="margin: 15px;font-family: Dana;    display: flex;
     justify-content: center;">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">نام تبریک گوینده</span>
@@ -36,9 +35,9 @@
     margin-top: 10px;"></h1>
             </div>
             <div>
-            <a download="custom-filename.jpg" href="#" id="download-link" title="ImageName">
-            <img src="Nowruz.jpg" id="imagee" alt="Nowruz99">
-</a>
+                <a download="custom-filename.jpg" href="#" id="download-link" title="ImageName">
+                    <img src="Poster.jpg" id="imagee" alt="Nowruz99">
+                </a>
 
             </div>
 
@@ -46,12 +45,8 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="watermark.min.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
@@ -69,7 +64,8 @@
                     textSize: 100,
                     margin: 12,
                     done: function(imgURL) {
-                        this.src = imgURL;$("#download-link").attr("href", imgURL);}
+                        this.src = imgURL;
+                        $("#download-link").attr("href", imgURL);
                     }
                 });
                 $("#download-text").append("برای دانلود روی عکس کلیک کنید");
