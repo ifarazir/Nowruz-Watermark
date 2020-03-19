@@ -69,9 +69,10 @@
                     textSize: 100,
                     margin: 12,
                     done: function(imgURL) {
-                        this.src = imgURL;
+                        this.src = imgURL;$("#download-link").attr("href", imgURL);}
                     }
                 });
+                $("#download-text").append("برای دانلود روی عکس کلیک کنید");
             });
 
         });
