@@ -38,18 +38,18 @@
     <script src="watermark.min.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            // $("button").click(function () {
-            //     var textt = $('input').val();
-
-            // });
-            $(function () {
+            $("button").click(function () {
+                var textt = $('input').val();
                 $('#imagee').watermark({
-                    text: 'GOOGLE.COM',
-                    textWidth: 100,
-                    gravity: 'w',
-                    opacity: 1,
-                    margin: 12
-                });
+                text: textt,
+                textWidth: 1000,
+                textColor: '#FFF',
+                textBg: 'rgba(0,0,0,0)',
+                opacity: 1,
+                gravity: 'nw',
+                textSize: 100,
+                margin: 12,
+                done: function(imgURL){this.src=imgURL;}
             });
         });
     </script>
