@@ -23,31 +23,36 @@
                     aria-describedby="inputGroup-sizing-default">
                 <button class="w-100 mt-3 rounded-pill btn btn-success">ثبت</button>
             </div>
-            <img src="Nowruz-Rasmi.jpg" id="imagee" alt="Nowruz99"
+            <img src="Poster.jpg" id="imagee" alt="Nowruz99"
                 style="position: absolute; top: 50%; left: 50%;transform: translate(-50%,-50%); height: 100%;">
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="rasmi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="watermark.min.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            $("button").click(function () {
-                var textt = $('input').val();
+            // $("button").click(function () {
+            //     var textt = $('input').val();
+
+            // });
+            $(function () {
                 $('#imagee').watermark({
-                text: textt,
-                textWidth: 2000,
-                textColor: '#fc9d07',
-                textBg: 'rgba(0,0,0,0)',
-                opacity: 1,
-                gravity: 'nw',
-                textSize: 100,
-                margin: 12,
-                done: function(imgURL){this.src=imgURL;}
-            });
+                    text: 'GOOGLE.COM',
+                    textWidth: 100,
+                    gravity: 'w',
+                    opacity: 1,
+                    margin: 12
+                });
             });
         });
     </script>
 </body>
 
-</html> 
+</html>
