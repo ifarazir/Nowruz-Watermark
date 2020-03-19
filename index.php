@@ -8,13 +8,20 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    #imagee {
+        width: 100%;
+    }
+    </style>
 </head>
 
 <body>
 
     <div class="container">
         <div class="row">
-            <div class="input-group mb-3" style="position: absolute; top: 10px; left: 10px; width: 20%;font-family: Dana;">
+            <div class="input-group mb-3"
+                style="margin: 15px;font-family: Dana;    display: flex;
+    justify-content: center;">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">نام تبریک گوینده</span>
                 </div>
@@ -24,9 +31,17 @@
                 </div>
                 <input type="text" class="form-control" id="Mabrook" aria-label="Sizing example input" aria-describedby="Mabrook">
                 <button class="w-100 mt-3 rounded-pill btn btn-success">ثبت</button>
+                <h1 id="download-text" style="    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;"></h1>
             </div>
-            <img src="Poster.jpg" id="imagee" alt="Nowruz99"
-                style="position: absolute; top: 50%; left: 50%;transform: translate(-50%,-50%); height: 100%;">
+            <div>
+            <a download="custom-filename.jpg" href="#" id="download-link" title="ImageName">
+            <img src="Nowruz.jpg" id="imagee" alt="Nowruz99">
+</a>
+
+            </div>
+
         </div>
     </div>
 
@@ -58,6 +73,7 @@
                     }
                 });
             });
+
         });
     </script>
 </body>
