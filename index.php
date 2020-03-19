@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    #imagee {
+        width: 100%;
+    }
+    </style>
 </head>
 
 <body>
@@ -15,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="input-group mb-3"
-                style="position: absolute; top: 10px; left: 10px; width: 20%;font-family: Dana;">
+                style="margin: 15px;font-family: Dana;">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">نام</span>
                 </div>
@@ -23,8 +28,11 @@
                     aria-describedby="inputGroup-sizing-default">
                 <button class="w-100 mt-3 rounded-pill btn btn-success">ثبت</button>
             </div>
-            <img src="Nowruz.jpg" id="imagee" alt="Nowruz99"
-                style="position: absolute; top: 50%; left: 50%;transform: translate(-50%,-50%); height: 100%;">
+            <div>
+                <img src="Nowruz.jpg" id="imagee" alt="Nowruz99"
+                    style="">
+            </div>
+
         </div>
     </div>
 
